@@ -29,7 +29,7 @@ namespace Lab2.Controllers
 
         public ActionResult Details(String CategoriesName)
         {
-            ViewBag.CategoriesName = "You selected category:" +CategoriesName;
+            ViewBag.CategoriesName = "You Selected Category:" +CategoriesName;
             return View();
         }
 
