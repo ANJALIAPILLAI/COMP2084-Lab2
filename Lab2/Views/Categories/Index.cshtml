@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<Lab2.Models.Categories>
 @{
     ViewBag.Title = "Categories";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,8 +7,8 @@
 <h2>@ViewBag.Title.</h2>
 
 <ul>
-    <li>@Html.ActionLink("Food", "Details", "Categories")</li>
-    <li>@Html.ActionLink("Tech", "Details", "Categories")</li>
-    <li>@Html.ActionLink("Sport", "Details", "Categories")</li>
+    <li>@Html.ActionLink("Food", "Details", "Categories", new { CategoriesName = "Food" }, null)</li>
+    <li>@Html.ActionLink("Tech", "Details", "Categories", new { CategoriesName = "Tech" }, null)</li>
+    <li>@Html.ActionLink("Sports", "Details", "Categories", new { CategoriesName = "Sports" }, null)</li>
 
 </ul>
